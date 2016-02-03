@@ -1355,10 +1355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = NO;
@@ -1395,7 +1392,7 @@
 				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -1403,10 +1400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					armv7s,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = NO;
@@ -1435,7 +1429,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULEMAP_FILE = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1443,6 +1437,7 @@
 		BDF557671AB371490067F4F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				DEAD_CODE_STRIPPING = NO;
@@ -1454,6 +1449,7 @@
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
 			};
@@ -1462,6 +1458,7 @@
 		BDF557681AB371490067F4F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				DEAD_CODE_STRIPPING = NO;
@@ -1473,6 +1470,7 @@
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
 			};
